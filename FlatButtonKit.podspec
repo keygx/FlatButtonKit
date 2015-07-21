@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "FlatButtonKit"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.summary = "FlatButtonKit is written by Swift and make Flat Style Button from UILabel."
   s.homepage = "https://github.com/keygx/FlatButtonKit"
   s.license = { :type => "MIT", :file => "LICENSE" }
