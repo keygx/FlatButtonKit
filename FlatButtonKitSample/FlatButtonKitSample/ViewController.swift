@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  FlatButtonKitSample
 //
-//  Created by keygx on 2015/07/17.
+//  Created by keygx on 2015/07/21.
 //  Copyright (c) 2015年 keygx. All rights reserved.
 //
 
@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         
         button.title.normal = "Normal"
         button.tag = 1
-        button.exclusiveTouch = true
-        button.status = .Normal
         
         // set Touch Event
         button.setTarget(target: self, selector: "didTapped:")
@@ -33,18 +31,12 @@ class ViewController: UIViewController {
         
         
         btn1.tag = 11
-        btn1.exclusiveTouch = true
-        btn1.status = .Normal
         btn1.setTarget(target: self, selector: "didBtnTapped:")
         
         btn2.tag = 12
-        btn2.exclusiveTouch = true
-        btn2.status = .Normal
         btn2.setTarget(target: self, selector: "didBtnTapped:")
         
         btn3.tag = 13
-        btn3.exclusiveTouch = true
-        btn3.status = .Normal
         btn3.setTarget(target: self, selector: "didBtnTapped:")
     }
     

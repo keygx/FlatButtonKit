@@ -1,7 +1,7 @@
 //
 //  FlatButtonKit.swift
 //
-//  Created by keygx on 2015/07/17.
+//  Created by keygx on 2015/07/21.
 //  Copyright (c) 2015年 keygx. All rights reserved.
 //
 
@@ -89,6 +89,9 @@ public class FlatButtonKit: UILabel {
         
         // ユーザインタラクションを有効
         self.userInteractionEnabled = true
+        
+        // 同時押下禁止
+        self.exclusiveTouch = true
         
         // ジェスチャー設定
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "pressGestureHandler:")
