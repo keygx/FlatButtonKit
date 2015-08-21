@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         button.title.normal = "Normal"
+        button.title.highlighted = "Highlighted"
+        button.title.selected = "Selected"
+        button.title.disabled = "Disabled"
+        button.status = .Normal
         button.tag = 1
         
         // set Touch Event
@@ -26,7 +30,7 @@ class ViewController: UIViewController {
         
         // set Click Handler
         button.setClickHandler() { sender in
-            println("ClickHandler: \(sender.tag)")
+            print("ClickHandler: \(sender.tag)")
         }
         
         
@@ -47,34 +51,30 @@ class ViewController: UIViewController {
     // Receive Touch Event
     func didTapped(sender: NSTimer) {
         if let sender: AnyObject = sender.userInfo {
-            println("didTapped: \(sender.tag)")
+            print("didTapped: \(sender.tag)")
         }
     }
     
     @IBAction func styleNormal(sender: AnyObject) {
-        button.title.normal = "Normal"
         button.status = .Normal
     }
     
     @IBAction func styleHighlighted(sender: AnyObject) {
-        button.title.highlighted = "Highlighted"
         button.status = .Highlighted
     }
     
     @IBAction func styleSelected(sender: AnyObject) {
-        button.title.selected = "Selected"
         button.status = .Selected
     }
     
     @IBAction func styleDisabled(sender: AnyObject) {
-        button.title.disabled = "Disabled"
         button.status = .Disabled
     }
     
     // btn1, btn2, btn3
     func didBtnTapped(sender: NSTimer) {
         if let sender: AnyObject = sender.userInfo {
-            println("didBtnTapped: \(sender.tag)")
+            print("didBtnTapped: \(sender.tag)")
         }
     }
 }

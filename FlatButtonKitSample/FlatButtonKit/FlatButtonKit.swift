@@ -77,7 +77,7 @@ public class FlatButtonKit: UILabel {
     }
     
     // xibなどでつくったときに呼ばれる
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         initialize()
@@ -138,7 +138,7 @@ public class FlatButtonKit: UILabel {
     }
     
     // ターゲットメソッドの設定
-    public func setTarget(#target : AnyObject, selector: Selector) {
+    public func setTarget(target target : AnyObject, selector: Selector) {
         self.target = target
         self.selector = selector
     }
@@ -153,7 +153,7 @@ public class FlatButtonKit: UILabel {
         
         // Disabled
         if status == .Disabled {
-            if count(title.disabled) > 0 {
+            if !title.disabled.isEmpty {
                 self.text = title.disabled
             }
             self.setButtonStyle(.Disabled)
@@ -162,7 +162,7 @@ public class FlatButtonKit: UILabel {
         
         // Highlighted
         if status == .Highlighted {
-            if count(title.highlighted) > 0 {
+            if !title.highlighted.isEmpty {
                 self.text = title.highlighted
             }
             self.setButtonStyle(.Highlighted)
@@ -171,7 +171,7 @@ public class FlatButtonKit: UILabel {
         
         // Selected
         if status == .Selected {
-            if count(title.selected) > 0 {
+            if !title.selected.isEmpty {
                 self.text = title.selected
             }
             self.setButtonStyle(.Selected)
@@ -179,7 +179,7 @@ public class FlatButtonKit: UILabel {
         }
         
         // Normal
-        if count(title.normal) > 0 {
+        if !title.normal.isEmpty {
             self.text = title.normal
         }
         self.setButtonStyle(.Normal)
