@@ -94,7 +94,7 @@ public class FlatButtonKit: UILabel {
         self.exclusiveTouch = true
         
         // ジェスチャー設定
-        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "pressGestureHandler:")
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(pressGestureHandler(_:)))
         longPressGestureRecognizer.minimumPressDuration = 0.1
         longPressGestureRecognizer.allowableMovement = 10.0
         self.addGestureRecognizer(longPressGestureRecognizer)
