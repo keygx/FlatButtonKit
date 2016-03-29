@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         button.tag = 1
         
         // set Touch Event
-        button.setTarget(target: self, selector: "didTapped:")
+        button.setTarget(target: self, selector: #selector(didTapped(_:)))
         
         // set Click Handler
         button.setClickHandler() { sender in
@@ -35,13 +35,13 @@ class ViewController: UIViewController {
         
         
         btn1.tag = 11
-        btn1.setTarget(target: self, selector: "didBtnTapped:")
+        btn1.setTarget(target: self, selector: #selector(didBtnTapped(_:)))
         
         btn2.tag = 12
-        btn2.setTarget(target: self, selector: "didBtnTapped:")
+        btn2.setTarget(target: self, selector: #selector(didBtnTapped(_:)))
         
         btn3.tag = 13
-        btn3.setTarget(target: self, selector: "didBtnTapped:")
+        btn3.setTarget(target: self, selector: #selector(didBtnTapped(_:)))
     }
     
     override func didReceiveMemoryWarning() {
