@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var button: SampleButtonStyle!
-    @IBOutlet weak var btn1: SampleButtonStyle!
-    @IBOutlet weak var btn2: SampleButtonStyle!
-    @IBOutlet weak var btn3: SampleButtonStyle!
+    weak var button: SampleButtonStyle!
+    weak var btn1: SampleButtonStyle!
+    weak var btn2: SampleButtonStyle!
+    weak var btn3: SampleButtonStyle!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         button.title.highlighted = "Highlighted"
         button.title.selected = "Selected"
         button.title.disabled = "Disabled"
-        button.status = .Normal
+        button.status = .normal
         button.tag = 1
         
         // set Touch Event
@@ -49,30 +49,30 @@ class ViewController: UIViewController {
     }
     
     // Receive Touch Event
-    func didTapped(sender: NSTimer) {
+    func didTapped(_ sender: Timer) {
         if let sender: AnyObject = sender.userInfo {
             print("didTapped: \(sender.tag)")
         }
     }
     
-    @IBAction func styleNormal(sender: AnyObject) {
-        button.status = .Normal
+    @IBAction func styleNormal(_ sender: AnyObject) {
+        button.status = .normal
     }
     
-    @IBAction func styleHighlighted(sender: AnyObject) {
-        button.status = .Highlighted
+    @IBAction func styleHighlighted(_ sender: AnyObject) {
+        button.status = .highlighted
     }
     
-    @IBAction func styleSelected(sender: AnyObject) {
-        button.status = .Selected
+    @IBAction func styleSelected(_ sender: AnyObject) {
+        button.status = .selected
     }
     
-    @IBAction func styleDisabled(sender: AnyObject) {
-        button.status = .Disabled
+    @IBAction func styleDisabled(_ sender: AnyObject) {
+        button.status = .disabled
     }
     
     // btn1, btn2, btn3
-    func didBtnTapped(sender: NSTimer) {
+    func didBtnTapped(_ sender: Timer) {
         if let sender: AnyObject = sender.userInfo {
             print("didBtnTapped: \(sender.tag)")
         }

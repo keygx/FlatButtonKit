@@ -322,21 +322,29 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = keygx;
 				TargetAttributes = {
 					368432A61B5909FF006B4089 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3CCNMX7TC9;
+						DevelopmentTeamName = "Yukihiko Kagiyama";
+						LastSwiftMigration = 0800;
 					};
 					368432BB1B590A00006B4089 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = 368432A61B5909FF006B4089;
 					};
 					368432D01B590A26006B4089 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3CCNMX7TC9;
+						DevelopmentTeamName = "Yukihiko Kagiyama";
+						LastSwiftMigration = 0800;
 					};
 					368432DA1B590A26006B4089 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = 368432A61B5909FF006B4089;
 					};
 				};
@@ -570,6 +578,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -581,6 +590,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -597,6 +608,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
 			};
 			name = Debug;
@@ -610,6 +622,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
 			};
 			name = Release;
@@ -632,6 +646,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -651,6 +666,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -668,6 +685,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
 			};
 			name = Debug;
@@ -680,6 +698,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
 			};
 			name = Release;
