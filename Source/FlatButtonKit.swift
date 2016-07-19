@@ -108,11 +108,6 @@ public class FlatButtonKit: UILabel {
             return
         }
         
-        // .Selected時の処理
-        if status == .selected {
-            return
-        }
-        
         // ボタンが押された時の処理
         if sender.state == .began {
             // 開始
