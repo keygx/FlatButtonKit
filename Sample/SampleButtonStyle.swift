@@ -25,25 +25,25 @@ class SampleButtonStyle: FlatButtonKit {
         switch status {
         case .disabled:
             // Disabledのスタイルを設定
-            self.backgroundColor = UIColor.white()
-            self.layer.borderColor = UIColor.lightGray().cgColor
-            self.textColor = UIColor.lightGray()
+            self.backgroundColor = UIColor.white
+            self.layer.borderColor = UIColor.lightGray.cgColor
+            self.textColor = UIColor.lightGray
             
         case .highlighted:
             // Highlightのスタイルを設定
             self.backgroundColor = defaultBlue
             self.layer.borderColor = defaultBlue.cgColor
-            self.textColor = UIColor.white()
+            self.textColor = UIColor.white
             
         case .selected:
             // Selectedのスタイルを設定
-            self.backgroundColor = UIColor.orange()
-            self.layer.borderColor = UIColor.orange().cgColor
-            self.textColor = UIColor.white()
+            self.backgroundColor = UIColor.orange
+            self.layer.borderColor = UIColor.orange.cgColor
+            self.textColor = UIColor.white
             
         default:
             // Normalのスタイルを設定
-            self.backgroundColor = UIColor.white()
+            self.backgroundColor = UIColor.white
             self.layer.borderColor = defaultBlue.cgColor
             self.textColor = defaultBlue
         }
