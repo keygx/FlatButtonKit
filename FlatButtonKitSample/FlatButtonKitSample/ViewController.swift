@@ -50,8 +50,8 @@ class ViewController: UIViewController {
     
     // Receive Touch Event
     func didTapped(_ sender: Timer) {
-        if let sender: AnyObject = sender.userInfo {
-            print("didTapped: \(sender.tag)")
+        sender.userInfo.flatMap {
+            print("didTapped: \(($0 as AnyObject).tag)")
         }
     }
     
@@ -73,8 +73,8 @@ class ViewController: UIViewController {
     
     // btn1, btn2, btn3
     func didBtnTapped(_ sender: Timer) {
-        if let sender: AnyObject = sender.userInfo {
-            print("didBtnTapped: \(sender.tag)")
+        sender.userInfo.flatMap {
+            print("didTapped: \(($0 as AnyObject).tag)")
         }
     }
 }
