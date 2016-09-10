@@ -8,10 +8,10 @@
 import UIKit
 
 public enum ButtonStatus {
-    case Normal
-    case Highlighted
-    case Selected
-    case Disabled
+    case normal
+    case highlighted
+    case selected
+    case disabled
 }
 
 public struct ButtonTitle {
@@ -24,41 +24,41 @@ public struct ButtonTitle {
 public class FlatButtonKit: UILabel {
     
     // UIButton同様のステータスを保持する
-    public var status: ButtonStatus = .Normal {
+    public var status: ButtonStatus = .normal {
         didSet {
             apply()
         }
     }
     
     // enabledの状態に合わせButtonStatusを更新
-    override public var enabled: Bool {
+    override public var isEnabled: Bool {
         set {
-            super.enabled = newValue
+            super.isEnabled = newValue
             
-            if enabled {
-                status = .Normal
+            if isEnabled {
+                status = .normal
             } else {
-                status = .Disabled
+                status = .disabled
             }
         }
         get {
-            return super.enabled
+            return super.isEnabled
         }
     }
     
     // highlightedの状態に合わせButtonStatusを更新
-    override public var highlighted: Bool {
+    override public var isHighlighted: Bool {
         set {
-            super.highlighted = newValue
+            super.isHighlighted = newValue
             
-            if highlighted {
-                status = .Selected
+            if isHighlighted {
+                status = .selected
             } else {
-                status = .Normal
+                status = .normal
             }
         }
         get {
-            return super.highlighted
+            return super.isHighlighted
         }
     }
     
@@ -85,13 +85,13 @@ public class FlatButtonKit: UILabel {
     
     private func initialize() {
         // 初期ステータス設定
-        status = .Normal
+        status = .normal
         
         // ユーザインタラクションを有効
-        self.userInteractionEnabled = true
+        self.isUserInteractionEnabled = true
         
         // 同時押下禁止
-        self.exclusiveTouch = true
+        self.isExclusiveTouch = true
         
         // ジェスチャー設定
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(pressGestureHandler(_:)))
@@ -101,31 +101,26 @@ public class FlatButtonKit: UILabel {
     }
     
     // ジェスチャーイベント処理
-    internal func pressGestureHandler(sender: UILongPressGestureRecognizer) {
+    internal func pressGestureHandler(_ sender: UILongPressGestureRecognizer) {
         
         // disabled は処理しない
-        if status == .Disabled {
-            return
-        }
-        
-        // .Selected時の処理
-        if status == .Selected {
+        if status == .disabled {
             return
         }
         
         // ボタンが押された時の処理
-        if sender.state == .Began {
+        if sender.state == .began {
             // 開始
-            status = .Highlighted
+            status = .highlighted
         }
-        if sender.state == .Ended {
+        if sender.state == .ended {
             // 終了
-            status = .Normal
+            status = .normal
             
             // メソッドが設定されていれば実行
             if let t: AnyObject = target, let s: Selector = selector {
-                if t.respondsToSelector(s) {
-                    let timer = NSTimer.scheduledTimerWithTimeInterval(0.0, target: t, selector: s, userInfo: self, repeats: false)
+                if t.responds(to: s) {
+                    let timer = Timer.scheduledTimer(timeInterval: 0.0, target: t, selector: s, userInfo: self, repeats: false)
                     timer.fire()
                 }
             }
@@ -138,13 +133,13 @@ public class FlatButtonKit: UILabel {
     }
     
     // ターゲットメソッドの設定
-    public func setTarget(target target : AnyObject, selector: Selector) {
+    public func setTarget(target : AnyObject, selector: Selector) {
         self.target = target
         self.selector = selector
     }
     
     // ハンドラの設定
-    public func setClickHandler(handler: (FlatButtonKit) -> Void) {
+    public func setClickHandler(_ handler: (FlatButtonKit) -> Void) {
         self.clickHandler = handler
     }
     
@@ -152,29 +147,29 @@ public class FlatButtonKit: UILabel {
     private func apply() {
         
         // Disabled
-        if status == .Disabled {
+        if status == .disabled {
             if !title.disabled.isEmpty {
                 self.text = title.disabled
             }
-            self.setButtonStyle(.Disabled)
+            self.setButtonStyle(status: .disabled)
             return
         }
         
         // Highlighted
-        if status == .Highlighted {
+        if status == .highlighted {
             if !title.highlighted.isEmpty {
                 self.text = title.highlighted
             }
-            self.setButtonStyle(.Highlighted)
+            self.setButtonStyle(status: .highlighted)
             return
         }
         
         // Selected
-        if status == .Selected {
+        if status == .selected {
             if !title.selected.isEmpty {
                 self.text = title.selected
             }
-            self.setButtonStyle(.Selected)
+            self.setButtonStyle(status: .selected)
             return
         }
         
@@ -182,7 +177,7 @@ public class FlatButtonKit: UILabel {
         if !title.normal.isEmpty {
             self.text = title.normal
         }
-        self.setButtonStyle(.Normal)
+        self.setButtonStyle(status: .normal)
     }
     
     // ボタンスタイルの設定

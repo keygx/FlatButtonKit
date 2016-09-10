@@ -3,7 +3,7 @@
 FlatButtonKit is written by Swift and make Flat Style Button from UILabel.
 
 ## Requirements
-- Swift 2.2
+- Swift 3.0
 - iOS 8.0 or later
 
 ## Installation
@@ -14,6 +14,16 @@ FlatButtonKit is written by Swift and make Flat Style Button from UILabel.
 
 ```Cartfile
 github "keygx/FlatButtonKit"
+```
+or
+
+```Cartfile
+github "keygx/FlatButtonKit" "branch-name"
+```
+or
+
+```Cartfile
+github "keygx/FlatButtonKit" "tag"
 ```
 
 * install
@@ -32,8 +42,33 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit'
+target '<Your Target Name>' do
+    pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit'
+end
 ```
+or
+
+```PodFile
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit', :branch => 'branch-name'
+end
+```
+or
+
+```PodFile
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit', :tag => 'tag'
+end
+```
+
 * install
 
 ```
@@ -61,13 +96,13 @@ class SampleButtonStyle: FlatButtonKit {
 	 	~~
 
 		switch status {
-		case .Disabled:
+		case .disabled:
 	        // Disabled Style Stettings...
 
-		case .Highlighted:
+		case .highlighted:
 	        // Highlight Style Stettings...
 
-		case .Selected:
+		case .selected:
 	        // Selected Style Stettings...
 
 		default:
@@ -91,10 +126,10 @@ class SampleButtonStyle: FlatButtonKit {
 
 class ViewController: UIViewController {
 
-	@IBOutlet weak var button: SampleButtonStyle!
-    @IBOutlet weak var btn1: SampleButtonStyle!
-    @IBOutlet weak var btn2: SampleButtonStyle!
-    @IBOutlet weak var btn3: SampleButtonStyle!
+	weak var button: SampleButtonStyle!
+ 	weak var btn1: SampleButtonStyle!
+	weak var btn2: SampleButtonStyle!
+	weak var btn3: SampleButtonStyle!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -103,26 +138,26 @@ class ViewController: UIViewController {
         button.title.highlighted = "Highlighted"
         button.title.selected = "Selected"
         button.title.disabled = "Disabled"
-        button.status = .Normal
+        button.status = .normal
         button.tag = 1
 
 		// set Touch Event
-		button.setTarget(target: self, selector: "didTapped:") // -> func didTapped(sender:)
+		button.setTarget(target: self, selector: #selector(didTapped(_:))) // -> func didTapped(sender:)
 
 		or
 
 		// set Click Handler
 		button.setClickHandler() { sender in
-			println("ClickHandler: \(sender.tag)")
+			print("ClickHandler: \(sender.tag)")
 		}
 	}
 
 	// Receive Touch Event
-	func didTapped(sender: NSTimer) {
-	    if let sender: AnyObject = sender.userInfo {
-	        println("didTapped: \(sender.tag)")
-	    }
-	}
+	func didTapped(_ sender: Timer) {
+        if let sender: AnyObject = sender.userInfo {
+            print("didTapped: \(sender.tag)")
+        }
+    }
 
 	~~
 }

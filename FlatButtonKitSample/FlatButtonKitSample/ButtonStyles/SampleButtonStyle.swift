@@ -14,8 +14,8 @@ class SampleButtonStyle: FlatButtonKit {
     override func setButtonStyle(status: ButtonStatus) {
         
         // 共通のスタイルを設定
-        self.textAlignment = NSTextAlignment.Center
-        self.font = UIFont.boldSystemFontOfSize(CGFloat(16.0))
+        self.textAlignment = NSTextAlignment.center
+        self.font = UIFont.boldSystemFont(ofSize: CGFloat(16.0))
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 8.0
         self.layer.borderWidth = 1.0
@@ -23,28 +23,28 @@ class SampleButtonStyle: FlatButtonKit {
         let defaultBlue: UIColor = UIColor(red: 0.0/255.0, green: 122.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         
         switch status {
-        case .Disabled:
+        case .disabled:
             // Disabledのスタイルを設定
-            self.backgroundColor = UIColor.whiteColor()
-            self.layer.borderColor = UIColor.lightGrayColor().CGColor
-            self.textColor = UIColor.lightGrayColor()
+            self.backgroundColor = UIColor.white
+            self.layer.borderColor = UIColor.lightGray.cgColor
+            self.textColor = UIColor.lightGray
             
-        case .Highlighted:
+        case .highlighted:
             // Highlightのスタイルを設定
             self.backgroundColor = defaultBlue
-            self.layer.borderColor = defaultBlue.CGColor
-            self.textColor = UIColor.whiteColor()
+            self.layer.borderColor = defaultBlue.cgColor
+            self.textColor = UIColor.white
             
-        case .Selected:
+        case .selected:
             // Selectedのスタイルを設定
-            self.backgroundColor = UIColor.orangeColor()
-            self.layer.borderColor = UIColor.orangeColor().CGColor
-            self.textColor = UIColor.whiteColor()
+            self.backgroundColor = UIColor.orange
+            self.layer.borderColor = UIColor.orange.cgColor
+            self.textColor = UIColor.white
             
         default:
             // Normalのスタイルを設定
-            self.backgroundColor = UIColor.whiteColor()
-            self.layer.borderColor = defaultBlue.CGColor
+            self.backgroundColor = UIColor.white
+            self.layer.borderColor = defaultBlue.cgColor
             self.textColor = defaultBlue
         }
     }
