@@ -139,7 +139,7 @@ open class FlatButtonKit: UILabel {
     }
     
     // ハンドラの設定
-    public func setClickHandler(_ handler: ((FlatButtonKit) -> Void)) {
+    public func setClickHandler(_ handler: @escaping ((FlatButtonKit) -> Void)) {
         self.clickHandler = handler
     }
     

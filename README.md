@@ -20,6 +20,11 @@ or
 ```Cartfile
 github "keygx/FlatButtonKit" "branch-name"
 ```
+or
+
+```Cartfile
+github "keygx/FlatButtonKit" "tag"
+```
 
 * install
 
@@ -52,6 +57,18 @@ target '<Your Target Name>' do
     pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit', :branch => 'branch-name'
 end
 ```
+or
+
+```PodFile
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit', :tag => 'tag'
+end
+```
+
 * install
 
 ```
