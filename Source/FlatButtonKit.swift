@@ -21,7 +21,7 @@ public struct ButtonTitle {
     public var disabled:    String = ""
 }
 
-public class FlatButtonKit: UILabel {
+open class FlatButtonKit: UILabel {
     
     // UIButton同様のステータスを保持する
     public var status: ButtonStatus = .normal {
@@ -31,7 +31,7 @@ public class FlatButtonKit: UILabel {
     }
     
     // enabledの状態に合わせButtonStatusを更新
-    override public var isEnabled: Bool {
+    override open var isEnabled: Bool {
         set {
             super.isEnabled = newValue
             
@@ -47,7 +47,7 @@ public class FlatButtonKit: UILabel {
     }
     
     // highlightedの状態に合わせButtonStatusを更新
-    override public var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
         set {
             super.isHighlighted = newValue
             
@@ -65,7 +65,7 @@ public class FlatButtonKit: UILabel {
     // ボタンのラベル名の設定
     public var title = ButtonTitle()
     
-    private weak var target: AnyObject?
+    private var target: Any?
     private var selector: Selector?
     private var clickHandler: ((FlatButtonKit) -> Void)?
     
@@ -118,8 +118,8 @@ public class FlatButtonKit: UILabel {
             status = .normal
             
             // メソッドが設定されていれば実行
-            if let t: AnyObject = target, let s: Selector = selector {
-                if t.responds(to: s) {
+            if let t: Any = target, let s: Selector = selector {
+                if (t as AnyObject).responds(to: s) {
                     let timer = Timer.scheduledTimer(timeInterval: 0.0, target: t, selector: s, userInfo: self, repeats: false)
                     timer.fire()
                 }
@@ -133,13 +133,13 @@ public class FlatButtonKit: UILabel {
     }
     
     // ターゲットメソッドの設定
-    public func setTarget(target : AnyObject, selector: Selector) {
+    public func setTarget(target : Any, selector: Selector) {
         self.target = target
         self.selector = selector
     }
     
     // ハンドラの設定
-    public func setClickHandler(_ handler: (FlatButtonKit) -> Void) {
+    public func setClickHandler(_ handler: @escaping ((FlatButtonKit) -> Void)) {
         self.clickHandler = handler
     }
     
@@ -181,6 +181,6 @@ public class FlatButtonKit: UILabel {
     }
     
     // ボタンスタイルの設定
-    public func setButtonStyle(status: ButtonStatus) {}
+    open func setButtonStyle(status: ButtonStatus) {}
     
 }
