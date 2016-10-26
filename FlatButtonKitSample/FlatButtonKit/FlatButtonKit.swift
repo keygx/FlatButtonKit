@@ -88,16 +88,16 @@ open class FlatButtonKit: UILabel {
         status = .normal
         
         // ユーザインタラクションを有効
-        self.isUserInteractionEnabled = true
+        isUserInteractionEnabled = true
         
         // 同時押下禁止
-        self.isExclusiveTouch = true
+        isExclusiveTouch = true
         
         // ジェスチャー設定
         let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(pressGestureHandler(_:)))
         longPressGestureRecognizer.minimumPressDuration = 0.1
         longPressGestureRecognizer.allowableMovement = 10.0
-        self.addGestureRecognizer(longPressGestureRecognizer)
+        addGestureRecognizer(longPressGestureRecognizer)
     }
     
     // ジェスチャーイベント処理
@@ -140,7 +140,7 @@ open class FlatButtonKit: UILabel {
     
     // ハンドラの設定
     public func setClickHandler(_ handler: @escaping ((FlatButtonKit) -> Void)) {
-        self.clickHandler = handler
+        clickHandler = handler
     }
     
     // ボタンスタイルの適用
@@ -149,35 +149,35 @@ open class FlatButtonKit: UILabel {
         // Disabled
         if status == .disabled {
             if !title.disabled.isEmpty {
-                self.text = title.disabled
+                text = title.disabled
             }
-            self.setButtonStyle(status: .disabled)
+            setButtonStyle(status: .disabled)
             return
         }
         
         // Highlighted
         if status == .highlighted {
             if !title.highlighted.isEmpty {
-                self.text = title.highlighted
+                text = title.highlighted
             }
-            self.setButtonStyle(status: .highlighted)
+            setButtonStyle(status: .highlighted)
             return
         }
         
         // Selected
         if status == .selected {
             if !title.selected.isEmpty {
-                self.text = title.selected
+                text = title.selected
             }
-            self.setButtonStyle(status: .selected)
+            setButtonStyle(status: .selected)
             return
         }
         
         // Normal
         if !title.normal.isEmpty {
-            self.text = title.normal
+            text = title.normal
         }
-        self.setButtonStyle(status: .normal)
+        setButtonStyle(status: .normal)
     }
     
     // ボタンスタイルの設定
