@@ -101,7 +101,7 @@ open class FlatButtonKit: UILabel {
     }
     
     // ジェスチャーイベント処理
-    internal func pressGestureHandler(_ sender: UILongPressGestureRecognizer) {
+    @objc internal func pressGestureHandler(_ sender: UILongPressGestureRecognizer) {
         
         // disabled は処理しない
         if status == .disabled {
@@ -184,3 +184,4 @@ open class FlatButtonKit: UILabel {
     open func setButtonStyle(status: ButtonStatus) {}
     
 }
+
