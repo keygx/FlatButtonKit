@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    weak var button: SampleButtonStyle!
-    weak var btn1: SampleButtonStyle!
-    weak var btn2: SampleButtonStyle!
-    weak var btn3: SampleButtonStyle!
+    @IBOutlet weak var button: SampleButtonStyle!
+    @IBOutlet weak var btn1: SampleButtonStyle!
+    @IBOutlet weak var btn2: SampleButtonStyle!
+    @IBOutlet weak var btn3: SampleButtonStyle!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     // Receive Touch Event
-    func didTapped(_ sender: Timer) {
+    @objc func didTapped(_ sender: Timer) {
         sender.userInfo.flatMap {
             print("didTapped: \(($0 as AnyObject).tag)")
         }
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
     }
     
     // btn1, btn2, btn3
-    func didBtnTapped(_ sender: Timer) {
+    @objc func didBtnTapped(_ sender: Timer) {
         sender.userInfo.flatMap {
             print("didTapped: \(($0 as AnyObject).tag)")
         }

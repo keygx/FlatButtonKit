@@ -3,7 +3,7 @@
 FlatButtonKit is written by Swift and make Flat Style Button from UILabel.
 
 ## Requirements
-- Swift 3.1
+- Swift 4.0
 - iOS 8.0 or later
 
 ## Installation
@@ -126,10 +126,10 @@ class SampleButtonStyle: FlatButtonKit {
 
 class ViewController: UIViewController {
 
-	weak var button: SampleButtonStyle!
- 	weak var btn1: SampleButtonStyle!
-	weak var btn2: SampleButtonStyle!
-	weak var btn3: SampleButtonStyle!
+	@IBOutlet weak var button: SampleButtonStyle!
+  	@IBOutlet weak var btn1: SampleButtonStyle!
+  	@IBOutlet weak var btn2: SampleButtonStyle!
+  	@IBOutlet weak var btn3: SampleButtonStyle!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -153,9 +153,9 @@ class ViewController: UIViewController {
 	}
 
 	// Receive Touch Event
-	func didTapped(_ sender: Timer) {
+	@objc func didTapped(_ sender: Timer) {
         if let sender: AnyObject = sender.userInfo {
-            print("didTapped: \(sender.tag)")
+            print("didTapped: \(($0 as AnyObject).tag)")
         }
     }
 
