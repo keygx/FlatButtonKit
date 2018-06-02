@@ -3,7 +3,7 @@
 FlatButtonKit is written by Swift and make Flat Style Button from UILabel.
 
 ## Requirements
-- Swift 4.0
+- Swift 4.1
 - iOS 8.0 or later
 
 ## Installation
@@ -38,34 +38,61 @@ To integrate "FlatButtonKit.framework" into your Xcode project
 * PodFile
 
 ```PodFile
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-use_frameworks!
 
 target '<Your Target Name>' do
+    use_frameworks!
+    
     pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit'
+    
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.1'
+            end
+        end
+    end
+    
 end
 ```
 or
 
 ```PodFile
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-use_frameworks!
 
 target '<Your Target Name>' do
+    use_frameworks!
+    
     pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit', :branch => 'branch-name'
+    
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.1'
+            end
+        end
+    end
+    
 end
 ```
 or
 
 ```PodFile
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-use_frameworks!
 
 target '<Your Target Name>' do
+    use_frameworks!
+    
     pod 'FlatButtonKit', :git => 'https://github.com/keygx/FlatButtonKit', :tag => 'tag'
+    
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.1'
+            end
+        end
+    end
+    
 end
 ```
 
