@@ -3,7 +3,7 @@
 FlatButtonKit is written by Swift and make Flat Style Button from UILabel.
 
 ## Requirements
-- Swift 4.1
+- Swift 4.2
 - iOS 8.0 or later
 
 ## Installation

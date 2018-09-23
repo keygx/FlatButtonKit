@@ -12,10 +12,7 @@
 		368432B21B5909FF006B4089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368432B01B5909FF006B4089 /* Main.storyboard */; };
 		368432B41B5909FF006B4089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368432B31B5909FF006B4089 /* Images.xcassets */; };
 		368432B71B5909FF006B4089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368432B51B5909FF006B4089 /* LaunchScreen.xib */; };
-		368432C31B590A00006B4089 /* FlatButtonKitSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368432C21B590A00006B4089 /* FlatButtonKitSampleTests.swift */; };
 		368432D61B590A26006B4089 /* FlatButtonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 368432D51B590A26006B4089 /* FlatButtonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		368432DC1B590A26006B4089 /* FlatButtonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368432D11B590A26006B4089 /* FlatButtonKit.framework */; };
-		368432E51B590A26006B4089 /* FlatButtonKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368432E41B590A26006B4089 /* FlatButtonKitTests.swift */; };
 		368432E81B590A26006B4089 /* FlatButtonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368432D11B590A26006B4089 /* FlatButtonKit.framework */; };
 		368432E91B590A26006B4089 /* FlatButtonKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 368432D11B590A26006B4089 /* FlatButtonKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		368432F31B590AB2006B4089 /* FlatButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368432F11B590AB2006B4089 /* FlatButtonKit.swift */; };
@@ -23,27 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		368432BD1B590A00006B4089 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3684329F1B5909FF006B4089 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 368432A61B5909FF006B4089;
-			remoteInfo = FlatButtonKitSample;
-		};
-		368432DD1B590A26006B4089 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3684329F1B5909FF006B4089 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 368432D01B590A26006B4089;
-			remoteInfo = FlatButtonKit;
-		};
-		368432DF1B590A26006B4089 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3684329F1B5909FF006B4089 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 368432A61B5909FF006B4089;
-			remoteInfo = FlatButtonKitSample;
-		};
 		368432E61B590A26006B4089 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3684329F1B5909FF006B4089 /* Project object */;
@@ -75,15 +51,9 @@
 		368432B11B5909FF006B4089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		368432B31B5909FF006B4089 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		368432B61B5909FF006B4089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		368432BC1B590A00006B4089 /* FlatButtonKitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatButtonKitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		368432C11B590A00006B4089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368432C21B590A00006B4089 /* FlatButtonKitSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButtonKitSampleTests.swift; sourceTree = "<group>"; };
 		368432D11B590A26006B4089 /* FlatButtonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatButtonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368432D41B590A26006B4089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368432D51B590A26006B4089 /* FlatButtonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatButtonKit.h; sourceTree = "<group>"; };
-		368432DB1B590A26006B4089 /* FlatButtonKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatButtonKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		368432E31B590A26006B4089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368432E41B590A26006B4089 /* FlatButtonKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButtonKitTests.swift; sourceTree = "<group>"; };
 		368432F11B590AB2006B4089 /* FlatButtonKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatButtonKit.swift; sourceTree = "<group>"; };
 		368432F91B590ECD006B4089 /* SampleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,25 +67,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		368432B91B590A00006B4089 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		368432CD1B590A26006B4089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		368432D81B590A26006B4089 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				368432DC1B590A26006B4089 /* FlatButtonKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,9 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				368432A91B5909FF006B4089 /* FlatButtonKitSample */,
-				368432BF1B590A00006B4089 /* FlatButtonKitSampleTests */,
 				368432D21B590A26006B4089 /* FlatButtonKit */,
-				368432E11B590A26006B4089 /* FlatButtonKitTests */,
 				368432A81B5909FF006B4089 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,9 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				368432A71B5909FF006B4089 /* FlatButtonKitSample.app */,
-				368432BC1B590A00006B4089 /* FlatButtonKitSampleTests.xctest */,
 				368432D11B590A26006B4089 /* FlatButtonKit.framework */,
-				368432DB1B590A26006B4089 /* FlatButtonKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,23 +117,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		368432BF1B590A00006B4089 /* FlatButtonKitSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				368432C21B590A00006B4089 /* FlatButtonKitSampleTests.swift */,
-				368432C01B590A00006B4089 /* Supporting Files */,
-			);
-			path = FlatButtonKitSampleTests;
-			sourceTree = "<group>";
-		};
-		368432C01B590A00006B4089 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				368432C11B590A00006B4089 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		368432D21B590A26006B4089 /* FlatButtonKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,23 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				368432D41B590A26006B4089 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		368432E11B590A26006B4089 /* FlatButtonKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				368432E41B590A26006B4089 /* FlatButtonKitTests.swift */,
-				368432E21B590A26006B4089 /* Supporting Files */,
-			);
-			path = FlatButtonKitTests;
-			sourceTree = "<group>";
-		};
-		368432E21B590A26006B4089 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				368432E31B590A26006B4089 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,24 +176,6 @@
 			productReference = 368432A71B5909FF006B4089 /* FlatButtonKitSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		368432BB1B590A00006B4089 /* FlatButtonKitSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 368432C91B590A00006B4089 /* Build configuration list for PBXNativeTarget "FlatButtonKitSampleTests" */;
-			buildPhases = (
-				368432B81B590A00006B4089 /* Sources */,
-				368432B91B590A00006B4089 /* Frameworks */,
-				368432BA1B590A00006B4089 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				368432BE1B590A00006B4089 /* PBXTargetDependency */,
-			);
-			name = FlatButtonKitSampleTests;
-			productName = FlatButtonKitSampleTests;
-			productReference = 368432BC1B590A00006B4089 /* FlatButtonKitSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		368432D01B590A26006B4089 /* FlatButtonKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368432EA1B590A26006B4089 /* Build configuration list for PBXNativeTarget "FlatButtonKit" */;
@@ -295,25 +194,6 @@
 			productReference = 368432D11B590A26006B4089 /* FlatButtonKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		368432DA1B590A26006B4089 /* FlatButtonKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 368432EE1B590A26006B4089 /* Build configuration list for PBXNativeTarget "FlatButtonKitTests" */;
-			buildPhases = (
-				368432D71B590A26006B4089 /* Sources */,
-				368432D81B590A26006B4089 /* Frameworks */,
-				368432D91B590A26006B4089 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				368432DE1B590A26006B4089 /* PBXTargetDependency */,
-				368432E01B590A26006B4089 /* PBXTargetDependency */,
-			);
-			name = FlatButtonKitTests;
-			productName = FlatButtonKitTests;
-			productReference = 368432DB1B590A26006B4089 /* FlatButtonKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -322,7 +202,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = keygx;
 				TargetAttributes = {
 					368432A61B5909FF006B4089 = {
@@ -331,20 +211,10 @@
 						DevelopmentTeamName = "Yukihiko Kagiyama";
 						LastSwiftMigration = 0900;
 					};
-					368432BB1B590A00006B4089 = {
-						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
-						TestTargetID = 368432A61B5909FF006B4089;
-					};
 					368432D01B590A26006B4089 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeamName = "Yukihiko Kagiyama";
 						LastSwiftMigration = 0900;
-					};
-					368432DA1B590A26006B4089 = {
-						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
-						TestTargetID = 368432A61B5909FF006B4089;
 					};
 				};
 			};
@@ -362,9 +232,7 @@
 			projectRoot = "";
 			targets = (
 				368432A61B5909FF006B4089 /* FlatButtonKitSample */,
-				368432BB1B590A00006B4089 /* FlatButtonKitSampleTests */,
 				368432D01B590A26006B4089 /* FlatButtonKit */,
-				368432DA1B590A26006B4089 /* FlatButtonKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,21 +248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		368432BA1B590A00006B4089 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		368432CF1B590A26006B4089 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		368432D91B590A26006B4089 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,14 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		368432B81B590A00006B4089 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				368432C31B590A00006B4089 /* FlatButtonKitSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		368432CC1B590A26006B4089 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,32 +276,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		368432D71B590A26006B4089 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				368432E51B590A26006B4089 /* FlatButtonKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		368432BE1B590A00006B4089 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 368432A61B5909FF006B4089 /* FlatButtonKitSample */;
-			targetProxy = 368432BD1B590A00006B4089 /* PBXContainerItemProxy */;
-		};
-		368432DE1B590A26006B4089 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 368432D01B590A26006B4089 /* FlatButtonKit */;
-			targetProxy = 368432DD1B590A26006B4089 /* PBXContainerItemProxy */;
-		};
-		368432E01B590A26006B4089 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 368432A61B5909FF006B4089 /* FlatButtonKitSample */;
-			targetProxy = 368432DF1B590A26006B4089 /* PBXContainerItemProxy */;
-		};
 		368432E71B590A26006B4089 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 368432D01B590A26006B4089 /* FlatButtonKit */;
@@ -536,7 +359,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -585,7 +408,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -601,7 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -614,44 +437,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		368432CA1B590A00006B4089 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FlatButtonKitSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
-			};
-			name = Debug;
-		};
-		368432CB1B590A00006B4089 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = FlatButtonKitSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -676,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -698,44 +486,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		368432EF1B590A26006B4089 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FlatButtonKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
-			};
-			name = Debug;
-		};
-		368432F01B590A26006B4089 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = FlatButtonKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatButtonKitSample.app/FlatButtonKitSample";
 			};
 			name = Release;
 		};
@@ -760,29 +515,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		368432C91B590A00006B4089 /* Build configuration list for PBXNativeTarget "FlatButtonKitSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				368432CA1B590A00006B4089 /* Debug */,
-				368432CB1B590A00006B4089 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		368432EA1B590A26006B4089 /* Build configuration list for PBXNativeTarget "FlatButtonKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				368432EB1B590A26006B4089 /* Debug */,
 				368432EC1B590A26006B4089 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		368432EE1B590A26006B4089 /* Build configuration list for PBXNativeTarget "FlatButtonKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				368432EF1B590A26006B4089 /* Debug */,
-				368432F01B590A26006B4089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
