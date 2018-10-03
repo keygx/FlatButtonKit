@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "FlatButtonKit"
-  s.version = "1.5.0"
+  s.version = "1.5.1"
   s.summary = "FlatButtonKit is written by Swift and make Flat Style Button from UILabel."
   s.homepage = "https://github.com/keygx/FlatButtonKit"
   s.license = { :type => "MIT", :file => "LICENSE" }
@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.source = { :git => "https://github.com/keygx/FlatButtonKit.git", :tag => "#{s.version}" }
-  s.source_files  = "FlatButtonKitSample/FlatButtonKit/**/*"
+  s.source_files  = "source/**/*"
   s.requires_arc = true
 end
